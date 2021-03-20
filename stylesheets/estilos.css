@@ -1,0 +1,28 @@
+header {
+    background-color: antiquewhite;
+    margin-top: -22px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color:rgb(238, 235, 235);
+
+}
+
+nav {
+    text-align: center;
+}
+
+#cabecalho {
+    color: rgb(7, 6, 88);
+    /*background-color: pink;*/
+    text-align: center;
+    text-decoration: underline;
+}
+
+#subtitulo{
+    color:darkblue;
+    text-align: center;
+}

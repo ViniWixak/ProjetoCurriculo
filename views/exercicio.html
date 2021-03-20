@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <!--Configuração da página-->
+    <head> 
+		<meta charset = "UTF-8">
+		<title>Garotos de Programa</title>
+		<link rel="stylesheet" href="../stylesheets/estilos.css">
+	</head>
+
+	<body>
+        <!--Cabeçalho da página-->
+        <header>
+            <br> <!--quebra de linha-->
+            <h1 id="cabecalho">Exercícios Desenvolvimento Web</h1>
+            <h2 id="subtitulo">Estruturação de Páginas Usando HTML e CSS</h2>
+            <br>
+        </header>
+        <!-- Links no navbar -->
+        <nav>
+            <a href="curriculoVinicius.html">Currículo - Vinícius</a> |
+            <a href="curriculoVitor.html">Currículo - Vitor</a> |
+            <a href="curriculoTostes.html">Currículo - Rafael</a> |
+            <a href="curriculoMatheus.html">Currículo - Matheus</a> 
+        </nav>
+        <!--Seção onde será inserido o conteúdo dos outros arquivos HTML-->
+        <div id="conteudo"></div>
+
+        <!--Rodapé da página HTML-->
+        <footer>
+            <br>
+            Currículos dos garotos de programa
+        </footer>
+
+        <!--A tag script permite escrever códigos Javascript no documento HTML-->
+        <!--Esse algoritmo pega todas as tags com o seletor 'a' e quando 
+            o link é clicado gera um evento -->
+        <!-- O evento aciona uma função que acessa o arquivo referenciado no link, 
+            pega o conteúdo de texto desse arquio e insere na tag section -->
+        <script>
+            document.querySelectorAll('a').forEach(link => {
+                
+                const conteudo = document.getElementById('conteudo')
+               
+                link.onclick = function (e){
+                    e.preventDefault()                    
+                    fetch(link.href).then(resp => resp.text()).then(html => conteudo.innerHTML = html)
+                }
+            })
+        </script>
+    </body>
+<html>
