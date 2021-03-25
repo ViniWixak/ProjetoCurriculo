@@ -1,0 +1,47 @@
+#perfilVinicius {
+    position: absolute;
+    width: 150px;
+    left: 20px;
+    top: 20px;
+}
+
+#paginaVinicius {
+    position: relative;
+    width: 804px;
+    height: 1600px;
+    left: 200px;
+    top: 11px;
+    background-color: white;
+}
+
+#nomeVinicius {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.descricao {
+    position: relative;
+    text-align: center;
+    top: 50px;
+}
+
+.subtituloVinicius {
+    position: relative;
+    left: 30px;
+    top: 80px
+}
+
+.textoVinicius {
+    position: relative;
+    top: 70px;
+    left: 30px;
+    width: 90%;
+}
+
+.listasVinicius {
+    position: relative;
+    top: 58px;
+    left: 25px;
+}
