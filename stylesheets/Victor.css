@@ -1,0 +1,34 @@
+.dadosDaPessoa{
+    display: flex;
+}
+
+.cardbox{
+    position: relative;
+    width: 804px;
+    height: 1600px;
+    left: 200px;
+    top: 11px;
+    background-color: white;
+}
+
+.cardbox span{
+    width: 100%;
+}
+
+.dados{
+    text-align: center;
+}
+
+.foto{
+    float: left;
+    padding: 15px;
+}
+
+.foto img{
+    border-radius: 15%;
+}
+
+.corpo h3{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
